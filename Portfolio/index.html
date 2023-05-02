@@ -1,8 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <title>Portfolio</title>
+<head>
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<header>
+		<div class="container">
+			<h1>My Portfolio</h1>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="banner">
+		<div class="container">
+			<h2>Welcome to my portfolio</h2>
+			<p>Here you can find information about my projects and contact me for work.</p>
+		</div>
+	</section>
+
+	<section id="about">
+		<div class="container">
+			<h2>About Me</h2>
+			<p>Hi, my name is Niclas Salopuro and I am a Developer. I have experience in C#, html and css and I am passionate about Games, Coding and Developing. </p>
+		</div>
+	</section>
+
+	<section id="projects">
+		<div class="container">
+			<h2>My Projects</h2>
+			<div class="project">
+				<h3>Project Title</h3>
+				<img src="project-image.jpg" alt="Project Image">
+				<p>Description of the project.</p>
+				<a href="#" class="button">View Project</a>
+			</div>
+			<div class="project">
+				<h3>Project Title</h3>
+				<img src="project-image.jpg" alt="Project Image">
+				<p>Description of the project.</p>
+				<a href="#" class="button">View Project</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="container">
+			<h2>Contact Me</h2>
+			<form>
+				<label>Name</label>
+				<input type="text" name="name">
+
+				<label>Email</label>
+				<input type="email" name="email">
+
+				<label>Message</label>
+				<textarea name="message"></textarea>
+
+				<input type="submit" value="Send">
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p>Copyright © 2023 My Portfolio.
+			<br>All rights reserved.</p>
+		</div>
+	</footer>
 </body>
 </html>
