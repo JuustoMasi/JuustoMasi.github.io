@@ -17,7 +17,7 @@ padding: 0 20px;
 }
 
 h1 {
-font-size: 36px;
+font-size: 40px;
 font-weight: bold;
 margin: 0;
 }
@@ -31,19 +31,35 @@ margin: 0 0 20px 0;
 header {
     background-color: #666666;
     color: #FFFFFF; 
-    padding: 10px 10px 25px 10px;
+    padding: 45px 10px 45px ;
+}
+
+nav {
+position: absolute;
+top: 45px;
+right: 10px;
 }
 
 nav ul {
+    
     list-style: none;
 }
 
 nav ul li {
+    list-style: none;
     display: inline-block;
-    margin-right: 10px;
+    color: #585858;
+    background-color: #585858;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+
 }
 
 nav ul li a:hover {
+    list-style: none;
+    display: inline-block;
     color: #e6e6e6;
 }
 
