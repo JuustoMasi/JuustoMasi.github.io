@@ -65,20 +65,39 @@ nav ul li a:hover {
 
 /* Banner Style*/
 #banner h2 {
-font-size: 48px;
-font-weight: bold;
-margin: 0 0 20px 0;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 /* About Section */
 #about {
-padding: 100px 0;
+    padding: 100px 0;
+
 }
 
 #about h2 {
     font-size: 36px;
     font-weight: bold;
     margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 /* Project Section Style */
@@ -87,18 +106,18 @@ padding: 100px 0;
     padding: 100px 0;
 }
 
-.project {
+.projects {
     margin-bottom: 40px;
 }
 
-.project h3 {
+.projects h3 {
     font-size: 24px;
     font-weight: bold;
     height: auto;
     margin-bottom: 20px;
 }
 
-.project p {
+.projects p {
     margin: 0 0 20px 0;
 }
 
@@ -115,6 +134,7 @@ padding: 100px 0;
 .button:hover {
     background-color: #e6e6e6;
     color: #6C63FF;
+    border: 1px rgb(84, 84, 84);
 }
 
 /* Contact section*/
@@ -129,10 +149,12 @@ padding: 100px 0;
 }
 
 form {
-    display: block;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+display: block;
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;    
+align-items: center;
+justify-content: center;
 }
 
 input, textarea {
@@ -166,6 +188,12 @@ footer {
     padding: 10px 0 0;
 }
   
+footer p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 .footer-links {
     display: flex;
     justify-content: center;
@@ -176,6 +204,8 @@ footer {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
+    text-align: right;
+    padding-bottom: 55px;
 }
   
 .footer-links a:hover {
