@@ -1,79 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>My Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<header>
-		<div class="container">
-			<h1>My Portfolio</h1>
-			<nav>
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-	<section id="banner">
-		<div class="container">
-			<h2>Welcome to my portfolio</h2>
-			<p>Here you can find information about my projects and contact me for work.</p>
-		</div>
-	</section>
+  <main>
+    <section id="about">
+      <h1>About Me</h1>
+      <p>My name is Niclas Salopuro and I am Developer from Finland. I have experience in C#, html, css and Unity. I am passionate about games, coding/ developing and music</p>
+    </section>
 
-	<section id="about">
-		<div class="container">
-			<h2>About Me</h2>
-			<p>Hi, my name is Niclas Salopuro and I am a Developer. I have experience in C#, html and css and I am passionate about Games, Coding and Developing. </p>
-		</div>
-	</section>
+    <section id="portfolio">
+      <h1>Projects</h1>
+      <ul>
+        <li><a href="#"><img src="image1.jpg" alt="Project 1"></a></li>
+        <p>testing1</p>
+        <li><a href="#"><img src="image2.jpg" alt="Project 2"></a></li>
+        <p>testing2</p>
+        <li><a href="#"><img src="image3.jpg" alt="Project 3"></a></li>
+        <p>testing3</p>
+      </ul>
+    </section>
 
-	<section id="projects">
-		<div class="container">
-			<h2>My Projects</h2>
-			<div class="project">
-				<h3>Project Title</h3>
-				<img src="project-image.jpg" alt="Project Image">
-				<p>Description of the project.</p>
-				<a href="#" class="button">View Project</a>
-			</div>
-			<div class="project">
-				<h3>Project Title</h3>
-				<img src="project-image.jpg" alt="Project Image">
-				<p>Description of the project.</p>
-				<a href="#" class="button">View Project</a>
-			</div>
-		</div>
-	</section>
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <form action="sendmail.php" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" required>
+      
+        <label for="email">Email</label>
+        <input type="email" name="email" required>
+      
+        <label for="message">Message</label>
+        <textarea name="message" required></textarea>
+      
+        <input type="submit" value="Send">
+      </form>      
+    </section>
+  </main>
 
-	<section id="contact">
-		<div class="container">
-			<h2>Contact Me</h2>
-			<form>
-				<label>Name</label>
-				<input type="text" name="name">
-
-				<label>Email</label>
-				<input type="email" name="email">
-
-				<label>Message</label>
-				<textarea name="message"></textarea>
-
-				<input type="submit" value="Send">
-			</form>
-		</div>
-	</section>
-
-	<footer>
-		<div class="container">
-			<p>Copyright © 2023 My Portfolio.
-			<br>All rights reserved.</p>
-		</div>
-	</footer>
+  <footer>
+    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+  </footer>
 </body>
 </html>
