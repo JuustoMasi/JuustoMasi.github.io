@@ -1,94 +1,245 @@
-/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;  
+    padding: 0;
+}
 
+/* Global System */
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-  }
-  
-  a {
-    color: #0077cc;
-    text-decoration: none;
-  }
-  
-  ul {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+max-width: 960px;
+margin: auto 0;
+padding: 0 20px;
+}
+
+h1 {
+font-size: 36px;
+font-weight: bold;
+margin: 0;
+}
+
+p {
+font-size: 18px;
+margin: 0 0 20px 0;
+}
+
+/* Header Style */
+header {
+    background-color: #666666;
+    color: #FFFFFF; 
+    padding: 10px 10px 25px 10px;
+}
+
+nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Header styles */
-  
-  header {
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a:hover {
+    color: #e6e6e6;
+}
+
+/* Banner Style*/
+#banner h2 {
+font-size: 48px;
+font-weight: bold;
+margin: 0 0 20px 0;
+}
+
+/* About Section */
+#about {
+padding: 100px 0;
+}
+
+#about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+/* Project Section Style */
+#projects {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.project h3 {
+    font-size: 24px;
+    font-weight: bold;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.project p {
+    margin: 0 0 20px 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: #6C63FF;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #e6e6e6;
+    color: #6C63FF;
+}
+
+/* Contact section*/
+#contact {
+    padding: 100px 0;
+}
+
+#contact h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+form {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: 2px solid #666666;
+    border-radius: 8px;
+}
+
+input[type="sumbit"] {
+    display: block;
+    background-color: #6C63FF;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input[type="sumbit"]:hover {
+    background-color: #e6e6e6;
+    color: #6C63FF
+}
+
+footer {
     background-color: #333;
     color: #fff;
-    padding: 15px 20px;
-  }
+    padding: 10px 0 0;
+}
   
-  nav ul {
+.footer-links {
     display: flex;
-    justify-content: space-between;
-  }
+    justify-content: center;
+    align-items: center;
+}
   
-  nav li {
+.footer-links a {
+    color: #fff;
     margin: 0 10px;
-  }
+    text-decoration: none;
+}
   
-  nav a {
-    font-size: 18px;
-  }
+.footer-links a:hover {
+    text-decoration: underline;
   
-  /* Main content styles */
+}
   
-  main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 50px 20px;
-  }
-  
-  section {
-    margin-bottom: 50px;
-  }
-  
-  section h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  section p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  section ul {
+.footer-social {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
   
-  section li {
-    margin-bottom: 20px;
-    width: calc(33.33% - 10px);
-  }
+.footer-social a {
+    display: inline-block;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
   
-  section li img {
-    max-width: 100%;
-  }
+.footer-social a:hover {
+    text-decoration: underline;
+}
   
-  form label {
+.footer-social i {
+    font-size: 24px;
+}
+  
+
+/* Media queries */
+@media (max-width: 767px) {
+    nav ul li {
     display: block;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  form input[type="text"],
-  form input[type="email"],
-  form textarea {
-    font-size: 18px;
-    padding: 10px;
-  
+    margin: 10px 0;
+}
+    
+#banner h2 {
+    font-size: 36px;
+}
+    
+#about h2 {
+    font-size: 24px;
+}
+
+#projects h2 {
+    font-size: 24px;
+}
+}
+    
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+    padding: 0 15px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    nav ul li {
+    margin-left: 40px;
+}
+}
+    
+@media (min-width: 1200px) {
+    nav ul {
+    float: right;
+}
+
+#banner {
+    display: table;
+    height: 600px;
+    width: 100%;
+    text-align: center;
+}
+    
+#banner .caption {
+    display: table-cell;
+    vertical-align: middle;
+}
+    
+#banner h2 {
+    font-size: 72px;
+}
+}
