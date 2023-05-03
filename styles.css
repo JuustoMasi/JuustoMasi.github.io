@@ -1,0 +1,134 @@
+/* Body */
+body {
+    background-color: #f5e1f7;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #5d437c;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main */
+  .main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .about {
+    border-top: 2px solid #5d437c;
+    padding-top: 40px;
+  }
+  
+  .about h2 {
+    margin-top: 0;
+  }
+  
+  .services {
+    border-top: 2px solid #5d437c;
+    padding-top: 40px;
+  }
+  
+  .services h2 {
+    margin-top: 0;
+  }
+  
+  .services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .services li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .services li:before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    color: #5d437c;
+  }
+  
+  .contact {
+    border-top: 2px solid #5d437c;
+    padding-top: 40px;
+  }
+  
+  .contact h2 {
+    margin-top: 0;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  form textarea {
+    height: 150px;
+  }
+  
+  form button[type="submit"] {
+    background-color: #5d437c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #724b9c;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #5d437c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
